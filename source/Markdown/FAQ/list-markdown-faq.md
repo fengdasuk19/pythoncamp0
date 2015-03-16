@@ -174,7 +174,7 @@
 
 ### 尝试1 ###
 
-考虑到[《如何在 markdown 语法下键入换行符》]()一文中提到了：
+考虑到[《如何在 markdown 语法下键入换行符》](/source/Markdown/FAQ/how-to-newline-in-markdown.md)一文中提到了：
 
 
 > 写作者必须键入**2个连续的**`空格`之后再按`Enter`，才能完成`强制换行`这个动作
