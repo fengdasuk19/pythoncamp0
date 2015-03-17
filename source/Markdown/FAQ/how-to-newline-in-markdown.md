@@ -9,7 +9,7 @@ Or you won't succed,
 only to get a long line like this sentence.
 
 应键入以下代码：（1 个 [Space] 代表 1 个空格字符）  
-`Or you won't succed, [Space][Space]`  
+`Or you won't succed, `**`[Space][Space]`**  
 `only to get a long line like this sentence.`
 
 否则，当你键入以下代码时：  
@@ -28,7 +28,7 @@ Or you won't succed,
 only to get a long line like this sentence.
 
 you need to type code like this:( each [Space] means one space character)  
-`Or you won't succed, [Space][Space]`  
+`Or you won't succed, `**`[Space][Space]`**  
 `only to get a long line like this sentence.`
 
 Or when you type code like this:  
@@ -59,5 +59,6 @@ only to get a long line like this sentence.
 ## 参考资料  
 1. [添加 markdown 回车换行语法 #51](https://github.com/typecho/typecho/issues/51)
 2. [Markdown 语法说明 (简体中文版) ：段落和换行](http://wowubuntu.com/markdown/#p)
-3. [Writing on GitHub](https://help.github.com/articles/writing-on-github/)
-4. [Writing on GitHub - Newlines](https://help.github.com/articles/writing-on-github/#newlines)
+3. [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
+4. [Writing on GitHub](https://help.github.com/articles/writing-on-github/)
+5. [Writing on GitHub - Newlines](https://help.github.com/articles/writing-on-github/#newlines)
