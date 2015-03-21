@@ -161,3 +161,8 @@ You can use git branch -d <branch name> to delete a branch. Go ahead and delete 
 > 
 > [help.github](https://help.github.com/) and GitHub Training are also great for anything related to Git in general and using Git with GitHub.
 
++++++++++++++++++
+
+`git clone <URL>`
+
+[liaoxuefeng](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000)
