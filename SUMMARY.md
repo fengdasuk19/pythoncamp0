@@ -23,6 +23,6 @@
 * [Markdown](/source/Markdown/markdown-intro.md)
   * [基本语法](/source/Markdown/easy-markdown.md)
   * [FAQ](/source/Markdown/FAQ/mk-faq-intro.md)
-     * [换行](/source/Markdown/FAQ/faq-markdown-list.md)
-     * [列表](/source/Markdown/FAQ/how-to-newline-in-markdown.md)
+     * [换行](/source/Markdown/FAQ/how-to-newline-in-markdown.md)
+     * [列表](/source/Markdown/FAQ/faq-markdown-list.md)
 * [结尾](/source/end.md)

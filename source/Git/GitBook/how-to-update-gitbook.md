@@ -10,11 +10,7 @@ GitBook 》 MY BOOKS 》 [你的书名] 》 Settings 》 Publication 》 Git URL
 在 Git Shell 中 cd 到本地库下，输入
     > git push `Git URL of your book` master
  
-4. 以后的推送
-在 Git Shell 下输入
-    > `git push`
-
-5. 创建目录结构
+4. 创建目录结构
  1. 编写 SUMMARY.md  
  例如下面这样写。。。
  2. 编译过程  
