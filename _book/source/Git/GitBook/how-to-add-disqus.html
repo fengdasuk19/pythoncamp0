@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>换行 | README</title>
+        <title>添加评论插件 Disqus | README</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../../source/Markdown/FAQ/faq-markdown-list.html" />
+    <link rel="next" href="../../../source/Python/python-intro.html" />
     
     
-    <link rel="prev" href="../../../source/Markdown/FAQ/mk-faq-intro.html" />
+    <link rel="prev" href="../../../source/Git/GitBook/how-to-update-gitbook.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="6.2.1" data-basepath="../../.." data-revision="1427125772610">
+    <div class="book" data-level="4.2.3" data-basepath="../../.." data-revision="1427125772610">
     
 
 <div class="book-summary">
@@ -342,7 +342,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2.3" data-path="source/Git/GitBook/how-to-add-disqus.html">
+        <li class="chapter active" data-level="4.2.3" data-path="source/Git/GitBook/how-to-add-disqus.html">
             
                 
                     <a href="../../../source/Git/GitBook/how-to-add-disqus.html">
@@ -488,7 +488,7 @@
                 
     
         
-        <li class="chapter active" data-level="6.2.1" data-path="source/Markdown/FAQ/how-to-newline-in-markdown.html">
+        <li class="chapter " data-level="6.2.1" data-path="source/Markdown/FAQ/how-to-newline-in-markdown.html">
             
                 
                     <a href="../../../source/Markdown/FAQ/how-to-newline-in-markdown.html">
@@ -634,37 +634,35 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13">
+                    <section class="normal" id="section-gitbook_19">
                     
-                        <h1 id="-markdown-how-to-newline-in-markdown-">如何在 markdown 语法下键入换行符(How to Newline in Markdown? )</h1>
-<h2 id="-markdown-standard-markdown-sm-">标准 Markdown (Standard Markdown, SM) 版</h2>
-<p>对于用惯 <code>Microsoft Word</code> 的人来说需要注意一点：写作者必须键入<strong>2个连续的</strong><code>空格</code>之后再键入 1 个换行符（<code>Enter</code> * 1），才能完成<code>强制换行</code>这个动作（参考<a href="https://github.com/typecho/typecho/issues/51" target="_blank">[1]</a>与<a href="http://wowubuntu.com/markdown/#p" target="_blank">[2]</a>）。</p>
-<p>也就是说，为了在 SM 中得到如下显示：<br>Or you won&#39;t succed,<br>only to get a long line like this sentence.</p>
-<p>应键入以下代码：（1 个 [Space] 代表 1 个空格字符）<br><code>Or you won&#39;t succed,</code><strong><code>[Space][Space]</code></strong><br><code>only to get a long line like this sentence.</code></p>
-<p>否则，当你键入以下代码时：<br><code>Or you won&#39;t succed,</code><br><code>only to get a long line like this sentence.</code></p>
-<p>你将得到如下显示：<br>Or you won&#39;t succed, only to get a long line like this sentence.</p>
-<p>类似地，通过 2 个连续的换行符（<code>Enter</code> * 2）可达到强制换段的目的。</p>
-<p>Users who are used to typing in <code>Microsoft Word</code> need to notice this: to create a newline, you need to type <strong>TWO CONSECUTIVE</strong> <code>Space</code> before you type <code>Enter</code>, or to type a <code>Enter</code> followed by another new one.  </p>
-<p>Namely, to get stuff like the following:<br>Or you won&#39;t succed,<br>only to get a long line like this sentence.</p>
-<p>you need to type code like this:( each [Space] means one space character)<br><code>Or you won&#39;t succed,</code><strong><code>[Space][Space]</code></strong><br><code>only to get a long line like this sentence.</code></p>
-<p>Or when you type code like this:<br><code>Or you won&#39;t succed,</code><br><code>only to get a long line like this sentence.</code></p>
-<p>you&#39;ll get the following:<br>Or you won&#39;t succed, only to get a long line like this sentence.</p>
-<p>Similarly, you can type two <strong>TWO CONSECUTIVE</strong> <code>Enter</code> to get a new paragraph.</p>
-<h2 id="github-flavored-markdowngfmhttpshelpgithubcomarticlesgithub-flavored-markdown-"><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank">GitHub Flavored Markdown(GFM)</a> 版</h2>
-<p>经 <a href="https://github.com/yzha3917" target="_blank">yzha3917</a> 的<a href="https://github.com/OpenMindClub/OMOOC.py/issues/10#issuecomment-81923507" target="_blank">提醒</a>，我在 <a href="https://help.github.com/articles/writing-on-github/" target="_blank">《Writing on GitHub》</a> 中发现了这个：</p>
+                        <h2 id="-disqus">添加评论插件 Disqus</h2>
+<h3 id="">前期准备</h3>
+<ul>
+<li>本地已安装 NPM</li>
+<li>在 <a href="https://disqus.com/" target="_blank">https://disqus.com/</a> 注册了账户，并在登陆后从右上角齿轮处的下拉列表进入 <a href="https://disqus.com/admin/create/" target="_blank">Add Disqus To Site</a> ，特别注意 <code>Choose your unique Disqus URL</code> 这一项（也就是 <code>shortname</code>），下文要用到</li>
+<li><p>在注册后跳转到的页面中进入 Settings，在 Trusted Domains 这里填入</p>
+<p> gitbooks.io（请注意是gitbook【s】.io）
+ gitbook.com</p>
+</li>
+</ul>
+<h3 id="1">1</h3>
+<p>打开 Node.js 命令行 <code>Node.js command prompt</code>，输入以下命令</p>
 <blockquote>
-<p>Issues, comments, and pull request descriptions are written using GitHub Flavored Markdown along with some additional features to make writing content on GitHub easy.</p>
+<p><code>npm install gitbook-plugin-disqus</code></p>
 </blockquote>
-<p>也就是说在 <strong>Issues</strong>、<strong>Comments</strong>、<strong>pull request descriptions</strong> 这 3 部分采用了 GitHub 方言（GFM）处理，在这些地方写作而需要换行时，仅需像在 <code>Mircrosoft Word</code> 等传统 MS 文本处理软件中一样，键入 1 个换行符（<code>Enter</code> * 1）即可。</p>
-<p>例如，还是上面那个例子，当在 GitHub 的上述 3 个地方书写时，仅需按照上面本在 SM 中失效的代码，即<br><code>Or you won&#39;t succed,</code><br><code>only to get a long line like this sentence.</code></p>
-<p>即可得到下面的效果：<br>Or you won&#39;t succed,<br>only to get a long line like this sentence. </p>
+<h3 id="2">2</h3>
+<p>建立 <code>book.json</code>，输入以下内容</p>
+<p>{
+&nbsp;&nbsp;&quot;plugins&quot;: [&quot;disqus&quot;],<br>&nbsp;&nbsp;&quot;pluginsConfig&quot;: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;disqus&quot;: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;shortName&quot;: &quot;你注册的 <code>shortname</code> 代替这里&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</p>
+<h3 id="3">3</h3>
+<p>重新编译书籍，推送，完成</p>
+<h3 id="4">4</h3>
+<p>注意</p>
 <h2 id="">参考资料</h2>
 <ol>
-<li><a href="https://github.com/typecho/typecho/issues/51" target="_blank">添加 markdown 回车换行语法 #51</a></li>
-<li><a href="http://wowubuntu.com/markdown/#p" target="_blank">Markdown 语法说明 (简体中文版) ：段落和换行</a></li>
-<li><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank">GitHub Flavored Markdown</a></li>
-<li><a href="https://help.github.com/articles/writing-on-github/" target="_blank">Writing on GitHub</a></li>
-<li><a href="https://help.github.com/articles/writing-on-github/#newlines" target="_blank">Writing on GitHub - Newlines</a></li>
+<li><a href="http://www.ituring.com.cn/article/127645" target="_blank">使用Gitbook制作电子书</a></li>
+<li><a href="https://github.com/OpenMindClub/OMOOC.py/wiki/disqus_setup" target="_blank">disqus_setup</a></li>
 </ol>
 
                     
@@ -676,10 +674,10 @@
         </div>
 
         
-        <a href="../../../source/Markdown/FAQ/mk-faq-intro.html" class="navigation navigation-prev " aria-label="Previous page: FAQ"><i class="fa fa-angle-left"></i></a>
+        <a href="../../../source/Git/GitBook/how-to-update-gitbook.html" class="navigation navigation-prev " aria-label="Previous page: 从 GitHub 推送到 GiBook"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../../source/Markdown/FAQ/faq-markdown-list.html" class="navigation navigation-next " aria-label="Next page: 列表"><i class="fa fa-angle-right"></i></a>
+        <a href="../../../source/Python/python-intro.html" class="navigation navigation-next " aria-label="Next page: Python"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
