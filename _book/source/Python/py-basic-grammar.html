@@ -19,7 +19,7 @@
         
     
     
-    <link rel="next" href="../../source/Python/py-usual-libs.html" />
+    <link rel="next" href="../../source/Python/ctrl_flow.html" />
     
     
     <link rel="prev" href="../../source/Python/python-intro.html" />
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="5.1" data-basepath="../.." data-revision="1427125772610">
+    <div class="book" data-level="5.1" data-basepath="../.." data-revision="1428769162347">
     
 
 <div class="book-summary">
@@ -398,6 +398,44 @@
                 
             
             
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1.1" data-path="source/Python/ctrl_flow.html">
+            
+                
+                    <a href="../../source/Python/ctrl_flow.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                         控制流
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.2" data-path="source/Python/strings_in_py.html">
+            
+                
+                    <a href="../../source/Python/strings_in_py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                         字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         
@@ -426,6 +464,76 @@
                             <b>5.3.</b>
                         
                          特色功能
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.3.1" data-path="source/Python/list_in_py.html">
+            
+                
+                    <a href="../../source/Python/list_in_py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                         列表
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.2" data-path="source/Python/tuple_in_py.html">
+            
+                
+                    <a href="../../source/Python/tuple_in_py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                         元组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.3" data-path="source/Python/dict_in_py.html">
+            
+                
+                    <a href="../../source/Python/dict_in_py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.3.</b>
+                        
+                         字典
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="source/Python/tricks_in_py.html">
+            
+                
+                    <a href="../../source/Python/tricks_in_py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         小技巧
                     </a>
                 
             
@@ -634,6 +742,161 @@
                 <div class="page-inner">
                 
                 
+                    <section class="normal" id="section-gitbook_21">
+                    
+                        <h2 id="">变量</h2>
+<h3 id="">命名规则</h3>
+<p>与传统编程语言并无明显差异：大多以字母开头，不能以数字开头。</p>
+<p>通常使用大写字母定义<strong>常量</strong></p>
+<h3 id="">局部变量与全局变量</h3>
+<p>何时定义局部变量/全局变量？</p>
+<ol>
+<li><p>若希望所定义的变量对其他函数（包括主函数）隐藏信息，则定义为局部变量</p>
+</li>
+<li><p>若希望所定义的变量对其他函数可用，即要在不同函数中对同一变量进行操作，通过该变量进行通讯，则定义为全局变量</p>
+</li>
+</ol>
+<p>关于修改局部变量/全局变量，要注意：</p>
+<p>若定义了全局变量</p>
+<p><code>[v_0] = [data_0]</code></p>
+<p>则无法在函数 [fun] 内部通过以下代码修改全局变量 [v_0] 的值为 [data_1]</p>
+<p><code>[v_0] = [data_1]</code></p>
+<p>取而代之，该行代码将在函数内部创建一个作用于仅限于 [fun] 内部的局部变量 [v_0]，并赋值为 [data_1]；当返回主函数体时，名为 [v_0] 的局部变量消失，即此时若在主函数体中运行下述代码</p>
+<p><code>print [v_0]</code></p>
+<p>会得到如下输出</p>
+<blockquote>
+<p>[data_0]</p>
+</blockquote>
+<p>所以首先应该明确一点：<strong>在函数内部定义局部变量，起名不要与全局变量重复</strong></p>
+<p>如果希望在函数 [fun] 内部修改全局变量 [v_0]，则在函数体内部，使用该变量前，<strong>声明</strong>该变量为全局的</p>
+<p><code>global [v_0]</code></p>
+<p>此后在 便可在 [fun] 中对全局变量 [v_0] 进行修改</p>
+<p><strong>请正确声明全局变量名称，否则声明错误而不使用到被错误声明的变量，将导致意外错误</strong>，如下：</p>
+<p>原计划在函数内部修改全局变量<code>count_win</code>，但由于声明错误</p>
+<p><code>global counter_x, counter_y, counte_win</code></p>
+<p>导致以下代码虽然没有语法错误，但产生了语义错误，即创建了局部变量<code>count_win</code>，而没有修改到全局的<code>count_win</code></p>
+<p><code>count_win = str(counter_x)+&#39;/&#39;+str(counter_y)</code></p>
+<h2 id="">数据类型</h2>
+<h3 id="">常用数据类型</h3>
+<p>int, float, string</p>
+<hr>
+<h3 id="">强制类型转换</h3>
+<h3 id="">调用格式</h3>
+<p>强制转换 a 为类型 type</p>
+<p><code>[类型名type](a)</code></p>
+<p>也许你会有疑问：强制转换整型为浮点型，会发生什么呢？请看例子</p>
+<h3 id="">例子</h3>
+<p>你有以下代码</p>
+<p><code>print int(4.9)</code><br><code>print float(5)</code></p>
+<p>运行该句，将打印出以下结果：</p>
+<blockquote>
+<p>4<br>5.0</p>
+</blockquote>
+<hr>
+<h3 id="">查看数据类型</h3>
+<h3 id="">调用格式</h3>
+<p>查看数据 a 的类型 type</p>
+<p><code>type(a)</code></p>
+<h3 id="">例子</h3>
+<p>你有以下代码</p>
+<p><code>print type(4.9)</code><br><code>print type(5)</code></p>
+<p>运行该句，将打印出以下结果：</p>
+<blockquote>
+<p>[type &#39;float&#39;]<br>[type &#39;int&#39;]</p>
+</blockquote>
+<h2 id="">计算某数的幂</h2>
+<p>可直接通过运算符 <code>**</code>实现</p>
+<h3 id="">调用格式</h3>
+<p>计算 a 的 b 次幂</p>
+<p><code>a ** b</code> </p>
+<h3 id="">例子</h3>
+<p>你有以下代码</p>
+<p><code>print 2, &#39;^&#39;, 7, &#39;=&#39;, 2**7</code></p>
+<p>运行该句，将打印出以下结果：</p>
+<blockquote>
+<p>2 ^ 7 = 128</p>
+</blockquote>
+<h2 id="">一般除法，整除，求余（求模）</h2>
+<p>一般除法：可直接通过运算符 <code>/</code>实现
+整除（得商）：可直接通过运算符 <code>//</code>实现
+求余（求模）：可直接通过运算符 <code>%</code>实现</p>
+<h3 id="">调用格式</h3>
+<p>一般除法：计算 a 除以 b <code>a / b</code>
+整除（得商）：计算 a 整除 b （a 除以 b 所得商） <code>a // b</code>
+求余（求模）：计算 a 对 b 求模结果（a 除以 b 所得余数）<code>a % b</code></p>
+<h3 id="">例子</h3>
+<p>你有以下代码</p>
+<p><code>a = 49.0</code><br><code>b = 10</code><br><code>c = a // b</code><br><code>d = a / b</code><br><code>e = a % b</code><br><code>print c, d, e</code>  </p>
+<p>运行该句，将打印出以下结果</p>
+<blockquote>
+<p>4.0 4.9 9.0</p>
+</blockquote>
+<h2 id="">函数</h2>
+<h3 id="">定义格式</h3>
+<p><code>def [函数名]（形参列表，注意括弧是**半角**状态；不需要接受参数时，直接输入一对括弧即可):[注意此处的**冒号**！]</code><br><code>[缩进 * n_0，注意，严格缩进，同样的缩进格数表示同一级内容，n_i表示缩进空格数]</code><br><code>[缩进 * n_1]</code><br><code>[缩进 * n_2]</code><br><code>[...]</code><br><code>[缩进 * n_0，注意，与函数体内部最外层缩进空格数一样多]return [函数返回值]（注意，若无提供 return 语句，python 将返回值 None）</code></p>
+<h3 id="">调用格式</h3>
+<p><code>[函数名](实参列表；如果函数不需要参数，直接输入一对括弧即可)</code></p>
+<h3 id="">例子</h3>
+<p>注：请用中文所提示的内容替代以上『[]』及其框住的内容。下同，不再赘述。</p>
+<p>你有以下代码</p>
+<p><code>def cal_add(a, b):</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>c = a + b</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>print a, &#39;+&#39;, b, &#39;=&#39;, c</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>print &#39;Now print&#39;, a, &#39;to&#39;, b - 1, &#39;:&#39;</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>for i in range(a, b):</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>print i</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>return c</code></p>
+<p><code>def test_hello():</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>print &#39;Hello, world!&#39;</code>    </p>
+<p>被这样调用时</p>
+<p><code>x = cal_add(1, 10)</code><br><code>y = test_hello()</code><br><code>print y</code></p>
+<p>将打印出以下结果（注意缩进！）</p>
+<blockquote>
+<p>1 + 10 = 11<br>Now print 1 to 9 :<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>Hello, world!<br>None</p>
+</blockquote>
+<h4 id="">预先构建框架写函数头时</h4>
+<p>请在函数头下至少写一句 <code>print</code>，不要仅仅在函数头下写一句注释，否则会在解释最近的下一个函数头时出现语法错误</p>
+<blockquote>
+<p>IndentationError: expected an indented block</p>
+</blockquote>
+<p>例如，如下代码将在解释到<code>def t_entrain_ratio(is_air, t):</code>时出现以上错误</p>
+<p><code>def input_data():</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code># input data for here</code></p>
+<p><code># mass conversion</code></p>
+<p><code># temperature conversion</code></p>
+<p><code># equivalent loading from air</code>
+<code>def t_entrain_ratio(is_air, t):</code>  </p>
+<p>只要在<code># input data for here</code>所在行加入一句 <code>print</code>，问题即可得到解决</p>
+<h2 id="">库和库函数调用（模块调用）</h2>
+<h3 id="">格式</h3>
+<ol>
+<li><p>若希望从库 lib 中调用库函数 lib_fun，键入以下代码载入它</p>
+<p> <code>from [lib] import [lib_fun]</code></p>
+<p> 此后直接引用函数 [lib_fan] 即可</p>
+</li>
+<li><p>若觉得键入一个一个库函数太麻烦，键入以下代码载入库</p>
+<p> <code>import [lib]</code></p>
+<p> 此后引用函数 [lib_fun] 时，应按照以下格式</p>
+<p> <code>[lib].[lib_fun]</code></p>
+</li>
+</ol>
+<h3 id="">例子</h3>
+<ol>
+<li><p>例如，希望从库 math 中调用自然对数的底数 e，可键入以下代码
+ <code>from math import e</code><br>此后需要打印 e 时，只要键入以下代码<br> <code>print e</code><br>将得到如下显示  </p>
+<blockquote>
+<p>2.71828182846</p>
+</blockquote>
+</li>
+<li><p>例如，希望调用库 math 中的大量函数，包括调用自然对数的底数 e，可键入以下代码
+ <code>import math</code>
+此后需要打印 e 时，只要键入以下代码<br> <code>print math.e</code><br>将得到如下显示  </p>
+<blockquote>
+<p>2.71828182846</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="">参考资料</h1>
+<ol>
+<li><a href="https://docs.python.org/2/library/stdtypes.html" target="_blank">Py - 2.7.10rc 0 - Documentation - The Standard Library - Built-in Types</a></li>
+<li><a href="http://bbs.csdn.net/topics/90061442" target="_blank">python中如何判断一个变量的数据类型？</a></li>
+</ol>
+
+                    
+                    </section>
+                
                 
                 </div>
             </div>
@@ -643,7 +906,7 @@
         <a href="../../source/Python/python-intro.html" class="navigation navigation-prev " aria-label="Previous page: Python"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../source/Python/py-usual-libs.html" class="navigation navigation-next " aria-label="Next page: 常见库"><i class="fa fa-angle-right"></i></a>
+        <a href="../../source/Python/ctrl_flow.html" class="navigation navigation-next " aria-label="Next page: 控制流"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
