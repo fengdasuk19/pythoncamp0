@@ -29,6 +29,7 @@
       * [元组](/source/Python/tuple_in_py.md)
       * [字典](/source/Python/dict_in_py.md)
   * [小技巧](/source/Python/tricks_in_py.md)
+  * [Python 与面向对象程序设计](/source/Python/oo-design.md)
 * [Markdown](/source/Markdown/markdown-intro.md)
   * [基本语法](/source/Markdown/easy-markdown.md)
   * [FAQ](/source/Markdown/FAQ/mk-faq-intro.md)
