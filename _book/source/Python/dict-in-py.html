@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>基本语法 | README</title>
+        <title>字典 | README</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../source/Markdown/FAQ/mk-faq-intro.html" />
+    <link rel="next" href="../../source/Python/tricks-in-py.html" />
     
     
-    <link rel="prev" href="../../source/Markdown/markdown-intro.html" />
+    <link rel="prev" href="../../source/Python/tuple-in-py.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="6.1" data-basepath="../.." data-revision="1429927491731">
+    <div class="book" data-level="5.3.3" data-basepath="../.." data-revision="1429927491731">
     
 
 <div class="book-summary">
@@ -504,7 +504,7 @@
         </li>
     
         
-        <li class="chapter " data-level="5.3.3" data-path="source/Python/dict-in-py.html">
+        <li class="chapter active" data-level="5.3.3" data-path="source/Python/dict-in-py.html">
             
                 
                     <a href="../../source/Python/dict-in-py.html">
@@ -617,7 +617,7 @@
                 
     
         
-        <li class="chapter active" data-level="6.1" data-path="source/Markdown/easy-markdown.html">
+        <li class="chapter " data-level="6.1" data-path="source/Markdown/easy-markdown.html">
             
                 
                     <a href="../../source/Markdown/easy-markdown.html">
@@ -796,16 +796,38 @@
                 <div class="page-inner">
                 
                 
+                    <section class="normal" id="section-gitbook_23">
+                    
+                        <h1 id="-dictionary">字典 Dictionary</h1>
+<h2 id="">创建字典</h2>
+<p>首先注意，如下代码中与创建<strong>列表</strong>的一个<strong>明显差别</strong>是：使用<strong>花括弧{}</strong>进行定义</p>
+<p>以下代码创建一个名为 dicts 的字典，其索引为 key(i)(i = 0, 1, 2, 3, ..., n)，对应的键值（即索引所映射/指向的值）为 value(i)(i = 0, 1, 2, 3, ..., n)</p>
+<p><code>dicts = {key(0):value(0), key(1):value(1), key(2):value(2), ..., key(n):value(n)}</code></p>
+<p>其中，对索引值（键名）的要求是：数据类型必须是不可变的(immutable type)，因此，列表、字典均不可作为索引值（键名）</p>
+<p>此外没有更多要求。从而，与列表是有序的这一事实不同，字典是无序的</p>
+<h2 id="">遍历字典</h2>
+<p>以下两种代码都可以实现对字典 dicts 的遍历</p>
+<ol>
+<li><p><code>for key in dicts:</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>print dicts[key]</code></p>
+</li>
+<li><p><code>for key, value in dict.items():</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>print value</code> </p>
+</li>
+</ol>
+<h2 id="">向字典中添加</h2>
+
+                    
+                    </section>
+                
                 
                 </div>
             </div>
         </div>
 
         
-        <a href="../../source/Markdown/markdown-intro.html" class="navigation navigation-prev " aria-label="Previous page: Markdown"><i class="fa fa-angle-left"></i></a>
+        <a href="../../source/Python/tuple-in-py.html" class="navigation navigation-prev " aria-label="Previous page: 元组"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../source/Markdown/FAQ/mk-faq-intro.html" class="navigation navigation-next " aria-label="Next page: FAQ"><i class="fa fa-angle-right"></i></a>
+        <a href="../../source/Python/tricks-in-py.html" class="navigation navigation-next " aria-label="Next page: 小技巧"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
