@@ -46,7 +46,24 @@
 
 例如。。。。
 
+## try...except...（。。。未完成） ##
+
+当我们需要处理异常情况（例如某种输入导致返回值错误），可以使用 try-except 语句
+
+### 格式 ###
+
+    try:
+        blabla...
+    except (Error Type, e.g. ValueError):
+        blabla
+
+### 例子 ###
+
+例如。。。。
+
 # 参考资料 #
 
 1. http://sebug.net/paper/python/ch06s04.html
 2. http://sebug.net/paper/python/ch06s03.html
+3. http://sebug.net/paper/python/ch13s02.html
+4. https://github.com/skyworlds/omooc.py/blob/master/src/iippy-1.py
