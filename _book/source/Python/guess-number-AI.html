@@ -1,0 +1,998 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>猜数字 AI | README</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../../source/Markdown/markdown-intro.html" />
+    
+    
+    <link rel="prev" href="../../source/Python/paint-board-design.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="5.6.2" data-basepath="../.." data-revision="1430403804626">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="source/begin.html">
+            
+                
+                    <a href="../../source/begin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         缘起
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="source/Search/intro.html">
+            
+                
+                    <a href="../../source/Search/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         互联的信息：检索
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="source/Search/tools.html">
+            
+                
+                    <a href="../../source/Search/tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         常用工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="source/Search/how-to-search.html">
+            
+                
+                    <a href="../../source/Search/how-to-search.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         手把手教你如何检索
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="source/Search/how-to-put-questions.html">
+            
+                
+                    <a href="../../source/Search/how-to-put-questions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         如何提问
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="source/Command-Line/CLI-intro.html">
+            
+                
+                    <a href="../../source/Command-Line/CLI-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         补课：从命令行开始
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="source/Command-Line/why-CLI.html">
+            
+                
+                    <a href="../../source/Command-Line/why-CLI.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         为什么要学命令行
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="source/Command-Line/CLI-grammar.html">
+            
+                
+                    <a href="../../source/Command-Line/CLI-grammar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         基本语法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="source/Command-Line/CLI-tricks.html">
+            
+                
+                    <a href="../../source/Command-Line/CLI-tricks.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         常用技巧
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="source/Git/Git-intro.html">
+            
+                
+                    <a href="../../source/Git/Git-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         版本控制：Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="source/Git/GitHub/github-intro.html">
+            
+                
+                    <a href="../../source/Git/GitHub/github-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         GitHub
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1" data-path="source/Git/GitHub/easy-github.html">
+            
+                
+                    <a href="../../source/Git/GitHub/easy-github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                         快速上手 GitHub
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2" data-path="source/Git/GitHub/git-roll-back.html">
+            
+                
+                    <a href="../../source/Git/GitHub/git-roll-back.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                         关键功能：版本回溯
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="source/Git/GitHub/gitbook-intro.html">
+            
+                
+                    <a href="../../source/Git/GitHub/gitbook-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         GitBook
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.2.1" data-path="source/Git/GitHub/easy-a-new-book.html">
+            
+                
+                    <a href="../../source/Git/GitHub/easy-a-new-book.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                         创建一本新书
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2.2" data-path="source/Git/GitBook/how-to-update-gitbook.html">
+            
+                
+                    <a href="../../source/Git/GitBook/how-to-update-gitbook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                         从 GitHub 推送到 GiBook
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2.3" data-path="source/Git/GitBook/how-to-add-disqus.html">
+            
+                
+                    <a href="../../source/Git/GitBook/how-to-add-disqus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.3.</b>
+                        
+                         添加评论插件 Disqus
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="source/Python/python-intro.html">
+            
+                
+                    <a href="../../source/Python/python-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Python
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="source/Python/py-basic-grammar.html">
+            
+                
+                    <a href="../../source/Python/py-basic-grammar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         基本语法
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1.1" data-path="source/Python/ctrl-flow.html">
+            
+                
+                    <a href="../../source/Python/ctrl-flow.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                         控制流
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.2" data-path="source/Python/strings-in-py.html">
+            
+                
+                    <a href="../../source/Python/strings-in-py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                         字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="source/Python/py-usual-libs.html">
+            
+                
+                    <a href="../../source/Python/py-usual-libs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         常见库
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="source/Python/py-features.html">
+            
+                
+                    <a href="../../source/Python/py-features.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         特色功能
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.3.1" data-path="source/Python/list-in-py.html">
+            
+                
+                    <a href="../../source/Python/list-in-py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                         列表
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.2" data-path="source/Python/tuple-in-py.html">
+            
+                
+                    <a href="../../source/Python/tuple-in-py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                         元组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.3" data-path="source/Python/dict-in-py.html">
+            
+                
+                    <a href="../../source/Python/dict-in-py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.3.</b>
+                        
+                         字典
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="source/Python/tricks-in-py.html">
+            
+                
+                    <a href="../../source/Python/tricks-in-py.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         小技巧
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="source/Python/oo-design.html">
+            
+                
+                    <a href="../../source/Python/oo-design.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Python 与面向对象程序设计
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="source/Python/examples-design.html">
+            
+                
+                    <a href="../../source/Python/examples-design.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Python 实例教程
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.6.1" data-path="source/Python/paint-board-design.html">
+            
+                
+                    <a href="../../source/Python/paint-board-design.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                         点彩画板
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5.6.2" data-path="source/Python/guess-number-AI.html">
+            
+                
+                    <a href="../../source/Python/guess-number-AI.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                         猜数字 AI
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="source/Markdown/markdown-intro.html">
+            
+                
+                    <a href="../../source/Markdown/markdown-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Markdown
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="source/Markdown/easy-markdown.html">
+            
+                
+                    <a href="../../source/Markdown/easy-markdown.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         基本语法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="source/Markdown/FAQ/mk-faq-intro.html">
+            
+                
+                    <a href="../../source/Markdown/FAQ/mk-faq-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         FAQ
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.2.1" data-path="source/Markdown/FAQ/how-to-newline-in-markdown.html">
+            
+                
+                    <a href="../../source/Markdown/FAQ/how-to-newline-in-markdown.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.1.</b>
+                        
+                         换行
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.2" data-path="source/Markdown/FAQ/faq-markdown-list.html">
+            
+                
+                    <a href="../../source/Markdown/FAQ/faq-markdown-list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.2.</b>
+                        
+                         列表
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="source/end.html">
+            
+                
+                    <a href="../../source/end.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         结尾
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >README</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_23">
+                    
+                        <ol>
+<li><p>我仅仅需要 1 个文本框来完成交互，这就要求我要有全局标志变量 <code>in_play</code> 来判断是否在游戏中。为什么要用全局标志？因为希望后面把游戏主函数拆分成几个小模块，而这些模块是否执行，则要看是否在游戏中，即都需要通过 1 个标志来通信从而判断状态，从而选用全局变量。</p>
+</li>
+<li><p>首先考虑到的是：我需要完成以下逻辑</p>
+<ul>
+<li><p>对输入进行判断</p>
+<ul>
+<li><p>输入为 Q？</p>
+<ul>
+<li><p>否：在游戏中？</p>
+<ul>
+<li><p>N</p>
+<ul>
+<li>键入是否 非 Y ?<ul>
+<li>是：不参与游戏，给与提示</li>
+<li>否：参与游戏，开始新游戏，删除临时数与上下边界，等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Y</p>
+<ul>
+<li><p>用户输入是否 （not 游戏第一步（定义：设定初始猜数范围）） 且 （not 在给定格式（R/H/L）内）？</p>
+<ul>
+<li>是（not 游戏第一步（设定初始猜数范围） 且 not 在给定格式内）: 提示，必须按格式输入，否则游戏无法继续也无法停止</li>
+<li><p>否（1. not 游戏第一步 且 在给定格式内[事实上，在此分支下，只要 not 游戏第一步，则必定在给定格式内] 2. 游戏第一步[只要是第一步，就无所谓上文所说的「格式」]）: 是 游戏第一步吗 ？（1. or 2. ？）</p>
+<ul>
+<li><p>是（2. ）：是否整数？（只要是游戏第一步，即边界还未确定结束，就必须输入整数确定边界）</p>
+<pre><code>  - 是：临时存储该整数，并提示刚输入的数。判断是否存在 2 个边界值？
+      - 是：提示输入 &#39;BU&#39; or &#39;BL&#39;，以确认要用新输入的数值替代哪个边界
+      - 否：是否有 1 个边界值？
+          - 是：比较刚输入的数和已经存在的边界值，把较大的作为上界，把较小的作为下界，提示输入 C 以确认边界，输入新值以修改边界
+          - 否：把刚输入的数值赋给下界，提示下一个输入的整数值将与此下界比较，大者成为上界，小者称为下界
+  - 否：是否 （存在临时整数 且 输入为 &#39;BU&#39; or &#39;BL&#39; or &#39;C&#39;）？ 
+      - 是：判断是否&#39;C&#39;？
+          - 是：是否已经有了上下界？
+              - 是：上下界顺序是否正确（上界 &gt; 下界？）
+                  - 是：边界确定，离开游戏第一步，正式开始游戏
+                  - 否：提示边界，提示上下界顺序必须正确
+              - 否：提示当前上下界，提示必须用数值输入边界
+          - 否：&#39;BU&#39; 还是 &#39;BL&#39;，以确定要把新输入的值赋给哪个变量，提示输入 C 以确认边界，输入新值以修改边界
+      - 否：是否存在临时整数？
+          - 是：提示输入&#39;BU&#39; or &#39;BL&#39; or &#39;C&#39;
+          - 否：边界值未确定，必须输入整数值以确定边界
+</code></pre></li>
+<li>否（1. ）：（not 游戏第一步 == 已经开始猜数 -&gt; [a. 猜对了  b. 没猜对- b1. 能继续猜 b2. 不能继续猜]）猜对了吗？<ul>
+<li>是（1.a）：游戏结束<ul>
+<li>游戏状态返回未开始，随时键入 y 开始新游戏</li>
+</ul>
+</li>
+<li>否（1.b）：是否达到次数？（判断能否继续玩）<ul>
+<li>是（1.b2 达到次数，不能继续猜）：游戏结束，本轮游戏中 AI 失败</li>
+<li>否（1.b1 未达到次数，继续猜）：答案比刚猜过的数高吗？<ul>
+<li>是（&#39;H&#39;）：增加 1 次猜数次数，以刚猜过的数字为新下限，猜</li>
+<li>否（&#39;L&#39;）：增加 1 次猜数次数，以刚猜过的数字为新上限，猜</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>是：退出游戏，提示</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>观察以上逻辑结构，确认了</p>
+<ol>
+<li>不需要循环控制：因为游戏交互是通过文本框输入进行事件驱动的</li>
+<li>整个流程很简单，没有重复得很多的模块，因此几乎不需要进行大的模块化，主要流程可在主游戏函数中完成</li>
+<li>因为第 2 点，一开始设想是否在游戏中的标志或许可以直接在游戏主函数内部直接设置，后来否定了这一想法：因为我的游戏主函数即为文本框输入的事件驱动函数，如果每次调用都生成一个新的局部变量并赋值，就无法获知当前游戏状态</li>
+<li>从第 3 点处得到启发：AI 猜数次数上限也要通过全局变量来控制</li>
+</ol>
+</li>
+<li><p>因此首先要确定在游戏中时的用户输入格式。暂定如下</p>
+<ul>
+<li>&#39;R&#39;: 猜测正确</li>
+<li>&#39;H&#39;: 用户所想的数比 AI 猜测的高</li>
+<li>&#39;L&#39;: 用户所想的数比 AI 猜测的低</li>
+<li>&#39;Q&#39;: 退出游戏</li>
+</ul>
+</li>
+<li><p>由于希望键入 &#39;r&#39; 与键入 &#39;R&#39; 的效果一致，因此需要字符串转换方法 <code>str.upper()</code>，本以为如果是非字母构成的字符串，无法应用该方法，本打算使用 try-except 语句，但在 CodeSkulptor 与本地环境中均发现这样的转换不会导致返回异常值给系统，因此决定直接用 <code>if (inp[0].upper() in &#39;RHLQ&#39;)</code> 来判断输入是否在给定格式中</p>
+</li>
+<li><p>由于希望取键入的字符串的首位字符来判断选项，一开始直接把变量 <code>inp</code> 的首位转换为大写后再赋予 <code>inp</code>，之后直接对 <code>inp</code> 进行判断。然而，在试图解决游戏开始的边界赋值问题时，出现了一个问题：也就是说，若我直接 <code>inp = inp[0].upper()</code>，则如果初始边界值输入为 50，传递给游戏的也只有 5 而已。因此，采用新的变量 <code>alpha_inp</code> 来作为判断选项分支的变量，而若在恰当的分支中，则直接把 <code>inp</code> 转换为数值，赋予边界，这就解决了初始边界赋值的一个问题</p>
+</li>
+<li><p>当走到这个分支（在游戏中 -&gt; 用户在游戏第一步 -&gt; 输入是整数 -&gt; 临时存储该整数，并提示刚输入的数 -&gt; 目前只有 1 个边界值 -&gt; 比较刚输入的数和已经存在的边界值，把较大的作为上界，把较小的作为下界，提示输入 C 以确认边界，输入新值以修改边界）时，需要比较刚输入的和已经存在的数值的大小从而赋值给上下界，最开始，代码如下：</p>
+<pre><code>limit_lower = min(limit_lower, temp0)
+limit_upper = max(limit_lower, temp0)
+</code></pre><p>然而当先输入 0 再输入 -100 时，上下界均被赋值 -100。研究后意识到，第一句将使 <code>limit_lower</code> 也变成 -100， 从而在第二句的比较是在 -100 与 -100 进行。因此，有必要使用 2 个中间变量用于保存两者的较大者和较小者，至少需要使用 1 个中间变量用于保存 <code>limit_lower</code> 与 <code>temp0</code> 中的较小者。（这里有个前提：本程序默认设置为，当 2 个边界都未赋值时，输入的第一个整数将赋值给 <code>limit_lower</code>）</p>
+</li>
+<li><p>判断出猜测错误后，应判断猜测次数是否过了上限，然后才决定是否进一步猜测。而最开始判断猜测次数是否超过上限，使用了语句</p>
+<pre><code> elif (guess_prac == guess_limit)
+</code></pre><p> 这里 <code>guess_prac</code> 用于保存实际已经猜测次数，而 <code>guess_limit</code> 用于保存猜测次数上限。然而测试时发现，若成功后继续告诉程序，所判断的数字过高或过低，将导致程序错误判断。检查代码，发现每次判断高低时，猜测次数增加 1。而无论成功后继续告诉程序什么信息，应该只有 &#39;y&#39; 能起作用（即重新开始游戏）。因此，应该修改为</p>
+<pre><code> elif (guess_prac &gt;= guess_limit)
+</code></pre><p> 才能保证游戏结束后，无论玩家反馈给程序什么信息，都不会改变刚结束的游戏的结果。</p>
+</li>
+<li><p>当猜测不正确且可以继续猜测的时候——以猜测数 x 比实际答案 y 高为例，此时，应该在 x 右侧—的区间内进行猜测。该区间的上界则是刚猜测 x 时使用的区间的上界，而下界，一开始我设定为 x，但实际测试时出现了问题：例如区间为[0, 100]，在 AI 使用的方法（二分查找）所能遇到的最坏情况下，这个数是 100，那么猜测序列如下：</p>
+<ol>
+<li>50</li>
+<li>75</li>
+<li>87</li>
+<li>94</li>
+<li>97</li>
+<li>98</li>
+<li>99</li>
+<li><p>100</p>
+<p>也就是说，直到第 8 次才猜测完成。而对于 100 + 1 - 0 = 101 个元素的集合而言，这个次数不应超过 7 次(power(2, 7) = 128) 。问题在哪里呢？研究了一下，发现 2 个相邻的猜测区间发生了重叠：例如，第 1 次的猜测区间为[0, 100]，第二次则为[50, 100]，而事实上 50 已经被排除，因此没有必要纳入第 2 个猜测区间中。这就是说，第 2 个猜测区间应该是 <code>[answer_num + 1, limit_upper]</code> 。这时我们来重新测试一次上面那个最坏情况的例子（* 表示这里与修改前的猜测不同）：</p>
+</li>
+<li><p>50</p>
+</li>
+<li>75</li>
+<li>88(*)</li>
+<li>94</li>
+<li>97</li>
+<li>99</li>
+<li><p>100</p>
+<p>即恰好在猜测次数上限即第 7 次完成了猜测。这表明，新的算法通过了测试。</p>
+</li>
+</ol>
+</li>
+<li><p>最开始将 Q 放在游戏设定输入格式中，与 R/H/L 并列，但后来考虑到，游戏应该在玩家希望停止的任何时候停止，所以把对 Q 的判断移动到最前面，即首先判断是否为 Q，是则退出游戏，否则才开始剩下的判断。这样与把 Q 与 R/H/L 并列并因此大幅修改程序相比较而言，结构会清晰得多，代码会简单得多</p>
+</li>
+<li><p>编写该程序最深刻的体验就是：维护糟糕逻辑的程序，对其修修补补是极其难受的事情，不如重写……嗯是的，我就是把第 2 部分的逻辑修改了半天，最后决定干脆重写，因为修补原来的逻辑实在太难受了。</p>
+</li>
+<li><p>另外，该程序仍然可以进一步改进：这样编写的只通过 1 个文本框进行交互的程序，只是相当于新制作了一个包含命令行的 GUI 而已，没有利用上 GUI 的友好方便特性。设想了一下，可以增加为 个文本框进行交互，1 个用于输入上界，1 个用于输入下界，通过单击按钮来实现告诉 AI 其所猜测的数字和实际答案之间的大小关系。</p>
+</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../source/Python/paint-board-design.html" class="navigation navigation-prev " aria-label="Previous page: 点彩画板"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../source/Markdown/markdown-intro.html" class="navigation navigation-next " aria-label="Next page: Markdown"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"disqus":{"shortName":"aosucomment"}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
