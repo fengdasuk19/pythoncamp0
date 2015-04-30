@@ -32,6 +32,7 @@
   * [Python 与面向对象程序设计](/source/Python/oo-design.md)
   * [Python 实例教程](/source/Python/examples-design.md)
       * [点彩画板](/source/Python/paint_board-design.md)
+      * [猜数字 AI](/source/Python/guess-number-AI.md)
 * [Markdown](/source/Markdown/markdown-intro.md)
   * [基本语法](/source/Markdown/easy-markdown.md)
   * [FAQ](/source/Markdown/FAQ/mk-faq-intro.md)
